@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://brand-img1.hotstarext.com/image/upload/v1585728139/Disnet%20Plus%20Hotstar%20Logo/D_Hotstar_logo_Dark_BG_120x120.png">
+    <title>Disney+Hotstar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color:rgb(16, 24, 71);
+        }
+        .navbar{
+            background-color: rgb(17, 46, 78);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10px;
+            position: sticky;
+            top: 0px;
+            height: 60px;
+            z-index: 1000;
+        }
+        .logo{
+            padding-right: 1200px;
+        }
+        .nav_items{
+            position: absolute;
+            right: 10px;
+        }
+        .navbar a{
+            display: inline-block;
+            margin-right: 10px;
+            font-size: larger;
+            color: rgb(130, 131, 133);
+            font-family:cursive;
+            text-underline-position: above;
+            text-decoration: none;
+        }
+        .navbar a:hover{
+            color: rgb(245, 247, 250);
+        }
+        #signin{
+            border: 1px solid rgb(123, 214, 236);
+            background-color: transparent;
+            color: rgb(120, 182, 236);
+            border-radius: 5px;
+            font-family:cursive;
+        }
+        #login{
+            border: 1px solid rgb(107, 235, 224);
+            background-color: transparent;
+            color: rgb(123, 186, 241);
+            border-radius: 5px;
+            font-family:cursive;
+            /* transition: all 3s ease-in; */
+        }
+        #signin:hover{
+            transform: scale(1.2);
+        }
+        #login:hover{
+            
+            transform: scale(1.2);
+        }
+        .home{
+            position: relative;
+            top: 40px;
+            margin-bottom: 60px;
+        }
+        .home img{
+            padding-left: 30px;
+            padding-right: 30px;
+            height: 500px ;
+        }
+
+        h2{
+            color: white; 
+            font-family:cursive;
+        }
+        h2:hover{
+            color: rgb(48, 143, 221);
+        }
+        .favimg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-left: 30px;
+        }
+        .favimg>img{
+            display: inline-block;
+            padding-left: 10px;
+            width: 200px;
+            height: 250px;
+            transition: all 0.5s ease-in-out;
+        }
+        .favimg>img:hover{
+            transform: scale(1.2);
+        }
+        .newimg{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+        }
+        .newimg>img{
+            display: inline-block;
+            padding-left: 10px;
+            width: 200px;
+            height: 250px;
+            transition: all 0.5s ease-in-out;
+        }
+        .newimg>img:hover{
+            transform: scale(1.2);
+        }
+        .about{
+            width: 100%;
+            height: 150px;
+            background-color:transparent;
+            display: flex;
+            position: relative;
+            bottom: 0px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .about1{
+            display: inline;
+            width:650px;
+            margin-top: 5px;
+            margin-left: 10px;
+        }
+
+        .about1 a{
+            display: inline-block;
+            padding-right: 10px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .about1 a:hover{
+            color: rgb(48, 143, 221);
+        }
+        .about1>p{
+            color: aliceblue;
+            font-size: 15px;
+        }
+        .about2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            width: 300px;
+            color: aliceblue;
+        }
+        .about3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+            width: 300px;
+            color: aliceblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="frontpage.html" target="_self"><img src="https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg" ></a>
+        </div>
+        <div class="nav_items">
+            <a href="#">Home</a>
+            <a href="#fav">Favourite</a>
+            <a href="#newlyadded">Newly added</a>
+            <a href="#about">About</a>
+            <a href="signup.html"><button id="signin">Signin</button></a>
+            <a href="login.html"><button id="login"> Login</button></a>
+        </div>
+    </div>
+    <div class="home">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/9476/1429476-h-fb7ceee122b4" class="d-block w-100" alt="..." >
+              </div>
+              <div class="carousel-item">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1331/641331-h" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1209/1431209-h-49df54f9aa5c" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/7028/1437028-h-6d52616c0cb9" class="d-block w-100" alt="...">
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="fav">
+        <h2 id="fav">Favourite</h2>
+    </div>
+    <div class="favimg">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5595/675595-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7738/687738-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3601/763601-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6143/686143-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9222/689222-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6566/686566-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1_5x/sources/r1/cms/prod/6080/686080-v" alt="">
+    </div>
+    <div class="new">
+        <h2 id="newlyadded">Newly Added</h2>
+    </div>
+    <div class="newimg">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/896/580896-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1_5x/sources/r1/cms/prod/4293/754293-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3669/593669-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9235/1389235-v-27df0544998f" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3299/953299-v" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1_5x/sources/r1/cms/prod/1608/1161608-v-8fdb21cf9c1c" alt="">
+        <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/3953/673953-v" alt="">
+    </div>
+    <div class="about" id="about">
+        <div class="about1">
+            <a href="#">about Disney+ Hotstar</a>
+            <a href="#">Terms Of Use</a>
+            <a href="##">Privacy and Policy</a>
+            <a href="##">FAQ</a>
+            <a href="####">Feedback</a>
+            <a href="####">Careers</a><br>&nbsp;
+            <p>© 2022 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved.</p>
+        </div>
+        <div class="about2">
+            <h6>Connect with Us</h6>
+        </div>
+        <div class="about3">
+            <h6>Disney+ Hotstar app</h6>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-image: url(https://th.bing.com/th/id/OIP.ELLgTWqQXs8p0OHyBod6bgHaDw?pid=ImgDet&rs=1);
+            background-attachment:fixed;
+            background-size:cover;
+        }
+
+        .form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color:aliceblue;
+            position:absolute;
+            top: 20%;
+            left: 32%;
+            border-radius: 20px;
+            border: 1px solid transparent;
+            box-shadow: 3px 3px 5px grey;
+        }
+        form{
+            width: 450px;
+            height: 400px;
+            background-color: transparent;
+            font-family: cursive;
+            font-size: 20px;
+        }
+        table{
+            width: 400px; 
+            height:300px;
+            margin: 20px;
+            margin-top: 20px;
+        }
+        table input{
+            width: 100%;
+            height: 50%;
+            margin-bottom: 20px;
+        }
+        .I{
+            box-shadow:0px 5px 7px rgb(121, 120, 120);
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .I:focus{
+            /* border-bottom: 3px solid rgb(55, 182, 255); */
+            outline-color: transparent;
+        }
+        #submit{
+            width: 90%;
+            height: 60%;
+            transition: all 0.5s ease-in-out;
+            background-color: transparent;
+            border: 1px solid rgb(55, 182, 255);
+            background-color: rgb(55, 182, 255);
+            color: aliceblue;
+            font-size: 20px;
+            border-radius: 30px;
+            margin-left: 20px;
+        }
+        #submit:hover{
+            border: 3px solid rgb(55, 182, 255);
+            transform: scale(1.1);
+        }
+        h3{
+            padding-left: 190px;
+            margin-bottom: 0px;
+        }
+        .close{
+            position:absolute;
+            top: 10px;
+            right: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        .close:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="form"><div class="close"><a href="frontpage.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg></a></div>
+        <form action="">
+            <h3>Log In</h3>
+            <table>
+                <tr>
+                   <td><label>Phone Number:</label></td>
+                </tr>
+                <tr>
+                   <td><input type="tel" name="" class="I" id="Phonenumber"></td>
+                </tr>
+                <tr>
+                   <td><label>Password:</label></td>
+                </tr>
+                <tr>
+                   <td><input type="password" name="" class="I" id="Password"></td>
+                </tr>
+                <tr>
+                   <td ><input type="submit" value="Login" id="submit"></td>
+                </tr>
+                <tr>
+                <td style="color:grey; padding-left: 60px;">Creat New account? <a href="signup.html" style="color: rgb(145, 140, 140);">Signup</a></td>
+            </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
